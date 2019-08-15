@@ -10,7 +10,13 @@ class TodoApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return new MaterialApp(
       title: 'Todo List',
-      home: new TodoList()
+      home: new TodoList(),
+      theme: ThemeData(
+        brightness: Brightness.light,
+        primaryColor: Colors.deepPurple,
+        accentColor: Colors.deepPurpleAccent,
+        fontFamily: 'Montserrat',
+      )
     );
   }
 }
